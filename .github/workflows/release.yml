@@ -81,7 +81,7 @@ jobs:
           fi
 
           git config --global user.name "nicebucket-release-bot[bot]"
-          git config --global user.email "2131833+nicebucket-release-bot[bot]@users.noreply.github.com"
+          git config --global user.email "2353687+nicebucket-release-bot[bot]@users.noreply.github.com"
 
           echo "Creating version tag from main branch..."
 
@@ -162,7 +162,13 @@ jobs:
         if: matrix.platform == 'ubuntu-22.04' # This must match the platform value defined above.
         run: |
           sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+          sudo apt-get install -y libappindicator3-dev librsvg2-dev patchelf \
+            libwebkit2gtk-4.1-dev=2.44.0-2 \
+            libwebkit2gtk-4.1-0=2.44.0-2 \
+            libjavascriptcoregtk-4.1-0=2.44.0-2 \
+            libjavascriptcoregtk-4.1-dev=2.44.0-2 \
+            gir1.2-javascriptcoregtk-4.1=2.44.0-2 \
+            gir1.2-webkit2-4.1=2.44.0-2
 
       - name: Clean and install frontend dependencies (Windows)
         if: matrix.platform == 'windows-latest'
