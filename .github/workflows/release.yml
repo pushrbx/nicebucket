@@ -138,6 +138,14 @@ jobs:
 
     runs-on: ${{ matrix.platform }}
     steps:
+      - name: Generate GitHub App Token
+        id: get_token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.RELEASE_BOT_APP_ID }}
+          private-key: ${{ secrets.RELEASE_BOT_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
       - uses: actions/checkout@v5
         with:
           ref: v${{ needs.create-version-tag.outputs.version }}
@@ -215,7 +223,7 @@ jobs:
         timeout-minutes: 360
         # TODO: Code signing environment variables temporarily disabled
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.get_token.outputs.token }}
           # APPLE_ID: ${{ secrets.APPLE_ID }}
           # APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
           # APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
