@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.3 (2025-11-25)
+
+
+### Features
+
+* add dark mode ([#40](https://github.com/pushrbx/nicebucket/issues/40)) ([891875b](https://github.com/pushrbx/nicebucket/commit/891875bfdd5934b076cfcf1881e9ef810295701e))
+* copy file URL ([#19](https://github.com/pushrbx/nicebucket/issues/19)) ([9260c33](https://github.com/pushrbx/nicebucket/commit/9260c33b330c7ef62d14888823df2edd51028a07))
+* initial version ([6807d4b](https://github.com/pushrbx/nicebucket/commit/6807d4b8e9464556ec405afc8146776862365579))
+
+
+### Bug Fixes
+
+* changelog ([a32bb6a](https://github.com/pushrbx/nicebucket/commit/a32bb6a65c46a1e67f2e2a614f129659b70d090a))
+* demo video URL ([a46ec05](https://github.com/pushrbx/nicebucket/commit/a46ec0503b4c41a937987996055e402422d383b5))
+* eslint config ([#35](https://github.com/pushrbx/nicebucket/issues/35)) ([9dc5c01](https://github.com/pushrbx/nicebucket/commit/9dc5c015072c38b454c788a957fafc41666f3279))
+* file extension of logo ([#5](https://github.com/pushrbx/nicebucket/issues/5)) ([ca680e4](https://github.com/pushrbx/nicebucket/commit/ca680e4a76fb91dbd857d69c58ba49183aa38ddc))
+* grammar ([02f2283](https://github.com/pushrbx/nicebucket/commit/02f22835570a95d19c998543e19552c64374ecff))
+* logo link ([#34](https://github.com/pushrbx/nicebucket/issues/34)) ([88fbe81](https://github.com/pushrbx/nicebucket/commit/88fbe8199824fb6b136213ffc77044343a2501ec))
+* logo link in README ([#4](https://github.com/pushrbx/nicebucket/issues/4)) ([646e35c](https://github.com/pushrbx/nicebucket/commit/646e35c9bf521977cd7276b09ba94d84fe1897da))
+* make logo square and smaller ([#6](https://github.com/pushrbx/nicebucket/issues/6)) ([83afddb](https://github.com/pushrbx/nicebucket/commit/83afddbdf2ea5305164a2f797f31397d02256950))
+* README ([80023a6](https://github.com/pushrbx/nicebucket/commit/80023a6cd0787a8ef9d380427e7498eae6e0a8ff))
+* remove extra comma in tauri.conf.json sed command ([8034013](https://github.com/pushrbx/nicebucket/commit/8034013c9195ad16e10b14a8075ca86821a0fb53))
+* wrong version for release binaries ([#20](https://github.com/pushrbx/nicebucket/issues/20)) ([4acc7e1](https://github.com/pushrbx/nicebucket/commit/4acc7e15d2e82398a2067b4323061b5daef3f79a))
+
 ### [0.1.2](https://github.com/nicebucket-org/nicebucket/compare/v0.1.1...v0.1.2) (2025-11-25)
 
 ### [0.1.1](https://github.com/nicebucket-org/nicebucket/compare/v0.1.0...v0.1.1) (2025-11-19)
