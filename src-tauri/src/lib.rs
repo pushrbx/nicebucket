@@ -17,10 +17,7 @@ fn should_set_webkit_workaround() -> bool {
         let os_type = info.os_type();
 
         // check if it's not Debian or Ubuntu (Debian-based)
-        !matches!(
-            os_type,
-            os_info::Type::Debian | os_info::Type::Ubuntu
-        )
+        !matches!(os_type, os_info::Type::Debian | os_info::Type::Ubuntu)
     }
 
     #[cfg(not(target_os = "linux"))]
