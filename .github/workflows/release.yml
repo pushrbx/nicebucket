@@ -75,7 +75,7 @@ jobs:
       - name: Create version tag
         id: versioning
         run: |
-          if [ "$GITHUB_REF_NAME" != "main" ]; then
+          if [ "$GITHUB_REF_NAME" != "fix_app_image1" ]; then
             echo "Error: You must be on the main branch to create a version tag. Current branch: $GITHUB_REF_NAME"
             exit 1
           fi
